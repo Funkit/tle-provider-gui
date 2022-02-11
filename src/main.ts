@@ -1,9 +1,10 @@
-import { createApp } from "vue";
+import { createApp, reactive } from "vue";
 import App from "./App.vue";
 import router from "./router";
 
 import "primevue/resources/primevue.min.css";
 import "primevue/resources/themes/saga-blue/theme.css";
+import "primevue/resources/themes/vela-blue/theme.css";
 
 import PrimeVue from "primevue/config";
 import AutoComplete from "primevue/autocomplete";
@@ -90,6 +91,8 @@ import TreeTable from "primevue/treetable";
 import TriStateCheckbox from "primevue/tristatecheckbox";
 
 const app = createApp(App);
+
+app.config.globalProperties.$appState = reactive({ theme: 'vela-blue' });
 
 app.use(PrimeVue, { ripple: true, inputStyle: "outlined" });
 app.use(router);
