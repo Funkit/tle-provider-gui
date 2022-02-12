@@ -6,7 +6,7 @@ import AppTopBar from "./components/AppTopBar.vue";
 
 <template>
   <div>
-    <AppTopBar status="You did it!" />
+    <AppTopBar title="TLE Provider" />
     <header>
       <img
         alt="Vue logo"

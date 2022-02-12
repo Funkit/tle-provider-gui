@@ -1,15 +1,22 @@
 <script setup lang="ts">
 defineProps<{
-  status: string;
+  title: string;
 }>();
 </script>
 
 <template>
-  <div class="layout-topbar">
-    <div class="item">
-        {{ status }}
+  <div class="layout-topbar p-component">
+    <div class="item logo">
+      <img
+        alt="Vue logo"
+        class="logo"
+        src="@/assets/logo.svg"
+      />
     </div>
-  </div>
+    <div class="item title">
+      {{title}}
+    </div>
+    </div>  
 </template>
 
 <style scoped>
@@ -27,10 +34,29 @@ defineProps<{
   box-shadow: 0px 3px 5px rgba(0,0,0,.02), 0px 0px 2px rgba(0,0,0,.05), 0px 1px 4px rgba(0,0,0,.08);
 }
 .layout-topbar .item {
-  text-transform: uppercase;
   color:var(--text-color-secondary);
   font-weight: 600;
   margin-bottom: .5rem;
   font-size: .875rem;
+}
+
+.layout-topbar .logo {
+    display: flex;
+    align-items: center;
+    color: var(--surface-900);
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 50px;
+    border-radius: 12px;
+    height: 2.5rem;
+    margin-right: .5rem;
+    height: 2.5rem;
+    margin-right: .5rem;
+}
+.layout-topbar .title {
+  color:var(--text-color-secondary);
+  font-weight: 600;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
 }
 </style>
