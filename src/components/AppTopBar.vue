@@ -34,7 +34,7 @@ defineProps<{
   box-shadow: 0px 3px 5px rgba(0,0,0,.02), 0px 0px 2px rgba(0,0,0,.05), 0px 1px 4px rgba(0,0,0,.08);
 }
 .layout-topbar .item {
-  color:var(--text-color-secondary);
+  color:var(--text-color);
   font-weight: 600;
   margin-bottom: .5rem;
   font-size: .875rem;
@@ -54,7 +54,7 @@ defineProps<{
     margin-right: .5rem;
 }
 .layout-topbar .title {
-  color:var(--text-color-secondary);
+  color:var(--text-color);
   font-weight: 600;
   margin-bottom: .5rem;
   font-size: 1.5rem;
