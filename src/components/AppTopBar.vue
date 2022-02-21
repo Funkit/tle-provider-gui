@@ -50,8 +50,6 @@ defineProps<{
     border-radius: 12px;
     height: 2.5rem;
     margin-right: .5rem;
-    height: 2.5rem;
-    margin-right: .5rem;
 }
 .layout-topbar .title {
   color:var(--text-color);
